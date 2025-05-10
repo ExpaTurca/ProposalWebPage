@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mihrace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <audio controls autoplay loop><source src="fon.mp3"></audio>
+    <div class="container">
+    <p>
+      Bugün çok önemli bir proje üzerinde çalışıyorum. <br>
+      Ama önce seninle bir kahve içmem gerekiyor. <br>
+      <h2>Ne dersin?</h2>
+    </p>
+    <div class="choice">
+      <!--https://formspree.io/f/xldbbkdv-->
+      <form 
+      id="proposalCard" 
+      action="#"
+      method="POST">
+      <input name="response" type="radio" id="coffee" value="coffee">
+        <label for="coffee">Benim de aklımdan bu geçiyordu. ☕</label><br>
+      <input name="response" type="radio" id="tea" value="tea">
+        <label for="tea">Çayı tercih ederim. 🍵</label><br>
+      <input type="submit" onclick="submitChoice()" value="Gönder"> 
+    </form> 
+    </div>
+  </div>
+  <script src="style.js"></script>
+</body>
+</html>
