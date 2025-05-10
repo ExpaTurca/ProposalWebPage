@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>💍 Sana Bir Sorum Var. 💍</title>
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="yesno.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#proposalModal">
+        ♥ Mesajı Oku ♥
+    </button>
+    <div class="modal fade" id="proposalModal" tabindex="1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLabel">Benimle Evlenir misin? 💕</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Şuanda değil elbette. Mesela 1 sene sonra</p>
+                    <p>Bu ışıklı yolu benimle birlikte yürür müsün? 🥹</p>
+                </div>
+                <div class="modal-footer">
+                    <p><!--https://formspree.io/f/xldbbkdv-->
+                        <form id="teklif" action="#" method="post">
+                            <button class="btn btn-success btn-inline" type="submit" value="evet" onclick="showHearts()">😍 Kocaman bir yüzük alırsan neden olmasın.</button>
+                            <button class="btn btn-danger btn-inline" type="button" name="noBtn" id="noButton" value="hayır" onclick="moveButton()">🙈 Hayır.</button>
+                            <input id="gizli" type="hidden" name="cevap" value="evet">
+                        </form>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div></div>
+    <script src="yesno.js"></script>
+</body>
+</html>
