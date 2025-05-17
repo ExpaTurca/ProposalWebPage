@@ -4,29 +4,34 @@
   <meta charset="UTF-8">
   <title>Mihrace</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-    <p>
-      Bugün çok önemli bir proje üzerinde çalışıyorum. <br>
-      Ama önce seninle bir kahve içmem gerekiyor. <br>
-      <h2>Ne dersin?</h2>
-    </p>
-    <div class="choice">
-      <!--https://formspree.io/f/xldbbkdv-->
-      <form 
-      id="proposalCard" 
-      action="#"
-      method="POST">
-      <input name="response" type="radio" id="coffee" value="coffee">
-        <label for="coffee">Benim de aklımdan bu geçiyordu. ☕</label><br>
-      <input name="response" type="radio" id="tea" value="tea">
-        <label for="tea">Çayı tercih ederim. 🍵</label><br>
-      <input type="submit" onclick="submitChoice()" value="Gönder"> 
-    </form> 
+    <div class="container container-lg">
+    <div class="row">
+      <div class="col">
+        <!--https://formspree.io/f/xldbbkdv-->
+        <form 
+        id="proposalCard" 
+        action="#"
+        method="POST" class="mb-3">
+          <p>
+              Bugün çok önemli bir proje üzerinde çalışıyorum. <br>
+              Ama önce seninle bir kahve içmem gerekiyor. <br>
+          </p>
+          <h2>Ne dersin?</h2>
+          <input name="response" type="radio" id="coffee" class="form-check-input" value="coffee">
+          <label for="coffee" class="form-check-label">Tamam gidelim ve birer latte içelim. ☕</label><br>
+          <input name="response" type="radio" class="form-check-input"  id="tea" value="tea">
+          <label for="tea" class="form-check-label">Çayı tercih ederim. 🍵</label><br>
+          <hr />
+          <button type="button" class="btn btn-success" onclick="submitChoice()">Davetini kabul ediyorum.</button>
+        </form>
+      </div>
     </div>
   </div>
-  <script src="style.js"></script>
+<script src="style.js"></script>
 </body>
 </html>
